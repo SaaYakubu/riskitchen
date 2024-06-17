@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Start-header */
+.header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 7%;
+  z-index: 1000;
+}
+
+.header.scrolled {
+  background-color: rgba(122, 46, 18, 0.8);
+}
+
+.header.scrolled .company-name,
+.header.scrolled .links a,
+.header.scrolled .signin {
+  color: #fff;
+}
+
+.header.scrolled .user-icon {
+  filter: invert(100%);
+}
+
+.company-name {
+  color: #212529;
+  font-size: 40pxpx;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  display: inline-block;
+  margin: 15px 0px 0px 5px;
+  position: relative;
+}
+
+.links {
+  display: flex;
+  position: absolute;
+  top: 25px;
+  left: 45%;
+}
+
+.links li {
+  list-style: none;
+  margin-right: 50px;
+  font-size: 18px;
+}
+
+.links li:last-child {
+  margin-right: 0px;
+}
+
+.links a {
+  text-decoration: none;
+  transition: background-color 0.5s, transform 0.5s, ease 0.7s;
+  display: inline-block;
+}
+
+.links a:visited,
+a:link,
+a:active {
+  color: #212529;
+}
+
+.links a:hover {
+  color: #fff;
+  cursor: pointer;
+  background-color: #7a2e12;
+  transform: scale(1.2, 1.2) translate(3px, 3px);
+}
+
+.nav-icon {
+  position: absolute;
+  top: 15px;
+  right: 2%;
+}
+
+.user-icon {
+  width: 20px;
+  height: auto;
+  transform: ;
+}
+
+.signin {
+  font-size: 18px;
+  border: none;
+  background-color: none;
+  display: inline-block;
+  transition: background-color 0.5s, transform 0.5s, ease 0.7s;
+}
+
+.signin:hover {
+  color: #fff;
+  cursor: pointer;
+  background-color: #7a2e12;
+  transform: scale(1, 1) translate(3px, 3px);
+}
+
+/* End-header */
+
+/* Start-herobanner */
+.hero-banner {
+  width: 100%;
+  height: 25%;
+  display: inline-block;
+  margin-top: 80px;
+  object-fit: cover;
+  overflow: hidden;
+}
+/*End-herobanner  */
+
+/* Welcome Message Section */
+.welcome-heading {
+  text-align: center;
+  margin: 50px 0px 10px 0px;
+  color: #7a2e12;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.welcome-message {
+  text-align: center;
+  text-wrap: wrap;
+  padding: 5px;
+  line-height: 1;
+  color: #212529;
+  font-weight: 420;
+}
+
+.container-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.explore-btn {
+  margin-top: 15px;
+  padding: 10px;
+  color: white;
+  background-color: #7a2e12;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.8s, transform 0.5s ease;
+}
+
+.explore-btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #7a2e12;
+  border: 1px solid #7a2e12;
+  transform: translate(5px, 5px);
+}
+/* End Welcome Message */
+
+/* Start of menu section */
+.menu-heading {
+  font-size: 22px;
+  color: #7a2e12;
+  margin: 10px 0 0 10px;
+  text-align: center;
+}
+
+.specials-heading {
+  font-size: 22px;
+  color: #7a2e12;
+  margin: 30px 0 0 10px;
+  text-align: center;
+}
+
+.grid-container1 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
+  padding: 10px;
+  margin: 10px 100px 0 100px;
+}
+
+.img-container {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.menu-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  padding: 5px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.img-container:hover .menu-img {
+  transform: scale(1.1);
+}
+
+.img-container figcaption {
+  margin-top: 8px;
+  font-size: 22px;
+  color: #212529;
+  position: relative;
+  z-index: 3;
+}
+.img-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(253, 248, 247, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.img-container:hover::after {
+  opacity: 1;
+}
+/* End Menu */
+
+/* Start of footer */
+footer {
+  background-color: #7a2e12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+}
+.copyright {
+  color: #fff;
+}
+/* End of footer */
